@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_meuperfil"
+            android:icon="@drawable/accountbox"
+            android:title="Meu perfil" />
+
+    </group>
+
+    <item android:title="Rotas e Trilhas">
+        <menu>
+            <item
+                android:id="@+id/nav_procurarrotas"
+                android:icon="@drawable/search"
+                android:title="Procurar rotas" />
+            <item
+                android:id="@+id/nav_criarrotas"
+                android:icon="@drawable/ic_editlocation"
+                android:title="Criar rotas" />
+            <item
+                android:id="@+id/nav_minhasrotas"
+                android:icon="@drawable/ic_mapas"
+                android:title="Minhas rotas" />
+            <item
+                android:id="@+id/nav_favoritos"
+                android:icon="@drawable/grade"
+                android:title="Favoritos" />
+        </menu>
+    </item>
+
+    <item android:title="Outros">
+        <menu>
+            <item
+                android:id="@+id/nav_compartilhar"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartilhar" />
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@drawable/exitapp"
+                android:title="Sair"/>
+        </menu>
+    </item>
+
+
+
+
+</menu>

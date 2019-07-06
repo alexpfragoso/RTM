@@ -4,15 +4,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorCinzaEscuro"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo3rtm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextEmailLogin"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="digite seu e-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textColorHint="@color/colorCinzaEsverdeado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editTextSenhaLogin"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="digite sua senha"
+            android:inputType="textPassword"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textColorHint="@color/colorCinzaEsverdeado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailLogin" />
+
+        <Button
+            android:id="@+id/buttonEntrarLogin"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorAzulEscuro"
+            android:text="Entrar"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSenhaLogin" />
+
+        <Button
+            android:id="@+id/buttonEsqueceuSenhaLogin"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:text="Esqueceu a senha?"
+            android:textColor="@color/colorAzulClaro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEntrarLogin" />
+
+        <Button
+            android:id="@+id/buttonCadastreLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:text="Cadastre-se!"
+            android:textColor="@color/colorVerde"
+            app:layout_constraintStart_toEndOf="@+id/buttonNaoTemConta"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEsqueceuSenhaLogin" />
+
+        <Button
+            android:id="@+id/buttonNaoTemConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:text="NÃO TEM CONTA?"
+            android:textColor="@color/colorCinzaEsverdeado"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEsqueceuSenhaLogin" />
+
+        <Button
+            android:id="@+id/buttonSetVisibilityPasswordLogin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/visibilityeye2"
+            app:layout_constraintEnd_toEndOf="@+id/editTextSenhaLogin"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="@+id/editTextSenhaLogin"
+            app:layout_constraintTop_toTopOf="@+id/editTextSenhaLogin" />
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CadastroActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorCinzaEscuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Cadastre-se!"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Entre com seus dados:"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editTextNomeCadastro"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Preencha seu nome"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textColorHint="@color/colorCinzaEsverdeado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/buttonCriarContaCadastro"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorAzulEscuro"
+            android:text="Criar conta"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSenhaCadastro" />
+
+        <Button
+            android:id="@+id/buttonJaTemContaCadastro"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:text="Já tenho uma conta."
+            android:textColor="@color/colorVerde"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCriarContaCadastro" />
+
+        <Button
+            android:id="@+id/buttonVoltar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/arrowbackblue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextEmailCadastro"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Preencha seu e-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textColorHint="@color/colorCinzaEsverdeado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeCadastro" />
+
+        <EditText
+            android:id="@+id/editTextSenhaCadastro"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Crie uma senha"
+            android:inputType="textPassword"
+            android:textColor="@color/colorBrancoAcizentado"
+            android:textColorHint="@color/colorCinzaEsverdeado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailCadastro" />
+
+        <Button
+            android:id="@+id/buttonSetVisibilityPasswordCadastro"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/visibilityeye2"
+            app:layout_constraintEnd_toEndOf="@+id/editTextSenhaCadastro"
+            app:layout_constraintStart_toStartOf="@+id/editTextSenhaCadastro"
+            app:layout_constraintTop_toTopOf="@+id/editTextSenhaCadastro" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
